@@ -7,7 +7,7 @@ document.querySelectorAll('.cta-button').forEach(btn => {
   });
 });
 
-// Form placeholder
+// Placeholder form submission
 document.querySelectorAll('form').forEach(f => {
   f.addEventListener('submit', e => {
     e.preventDefault();
