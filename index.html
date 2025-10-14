@@ -1,18 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>My Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Boudoir Experience</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <form id="contact">
-    <input type="text" name="name" placeholder="Your name" required>
-    <input type="email" name="email" placeholder="Your email" required>
-    <button type="submit">Send</button>
-  </form>
+  <div class="overlay"></div>
+
+  <header>
+    <h1>Your Experience</h1>
+    <p>Immersive, sensual, unforgettable</p>
+    <a href="#about" class="cta-button">Discover</a>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Step into a world where shadows, whispers, and luxury collide. Our immersive experiences awaken your senses and your imagination.</p>
+  </section>
+
+  <section id="events">
+    <h2>Past Experiences</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Clinik Angus 2017</h3>
+        <p>A journey into dark elegance.</p>
+      </div>
+      <div class="card">
+        <h3>Zone 4 2018</h3>
+        <p>Sensory and psychological thrills.</p>
+      </div>
+      <div class="card">
+        <h3>Verset 5 2019</h3>
+        <p>Where imagination meets the unknown.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Stay Updated</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Brand. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
