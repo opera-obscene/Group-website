@@ -1,4 +1,4 @@
-// Simple page interactions
+// Smooth scroll for CTA buttons
 document.querySelectorAll('.cta-button').forEach(btn => {
   btn.addEventListener('click', e => {
     e.preventDefault();
@@ -7,9 +7,11 @@ document.querySelectorAll('.cta-button').forEach(btn => {
   });
 });
 
-// Form submission (currently does nothing, placeholder)
-document.querySelector('form').addEventListener('submit', e => {
-  e.preventDefault();
-  alert('Thank you! (Webhook integration coming later)');
-  e.target.reset();
+// Form placeholder
+document.querySelectorAll('form').forEach(f => {
+  f.addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Message sent! (Webhook integration coming later)');
+    e.target.reset();
+  });
 });
