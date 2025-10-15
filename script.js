@@ -15,3 +15,18 @@ document.querySelectorAll('form').forEach(f => {
     e.target.reset();
   });
 });
+// Check URL for success parameter
+window.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('success') === 'true') {
+    const modal = document.getElementById('success-modal');
+    const closeBtn = document.getElementById('close-success');
+    modal.classList.remove('hidden');
+
+    // Close modal on click
+    closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) modal.classList.add('hidden');
+    });
+  }
+});
